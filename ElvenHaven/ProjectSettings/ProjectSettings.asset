@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: ea19ae9b06843fc46bc2b36a8c7391ea
+  productGUID: 17655603df9cf3943aff15a0964e22c7
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: TheGame
+  productName: ElvenHaven
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -646,8 +646,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 047c6fc1-ddaa-48f9-b760-5a351d58e5a3
-  projectName: TheGame (1)
+  cloudProjectId: 040a564a-1c31-4e4e-9898-6ff0cac10e04
+  projectName: ElvenHaven
   organizationId: vespies
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
