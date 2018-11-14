@@ -25,20 +25,22 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public delegate void UpdateHealth(int newHealth);
+    public static event UpdateHealth OnUpdateHealth;
 
     /**************************************
      * 
      * PRIVATE VARIABLES
      * 
      *************************************/
-    
+
     /*
      * gunAnim
      * stores a reference to the Animator component on this GameObject
      * We store a reference here because we will use the Animator component in the Update method
      * As we know, Update runs 30-60 times per second, so we don't want to be calling GetComponent
      * constantly.
-     */ 
+     */
     private Animator gunAnim;
 
     /*
@@ -47,7 +49,7 @@ public class Player : MonoBehaviour
      * see link: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
      * we can use this to get a reference to the Animator component for later use
      */
-    private void Start ()
+    private void Start()
     {
         /*
          * GET THE ANIMATOR COMPONENT
@@ -63,7 +65,7 @@ public class Player : MonoBehaviour
      * see link: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html
      * we can use this to list for mouse button presses, which we can then use to set the firing and idle animations on the player
      */
-    private void Update ()
+    private void Update()
     {
         /*
          * CHECK IF THE LEFT MOUSE BUTTON IS DOWN
@@ -86,7 +88,7 @@ public class Player : MonoBehaviour
             gunAnim.SetBool("isFiring", true);
         }
         else // left mouse button is not down
-        { 
+        {
             /*
              * SET THE ANIMATION TO "Player firing idle"
              * Here we set the bool called "isFiring" we setup in the Animator view in the editor
@@ -97,5 +99,14 @@ public class Player : MonoBehaviour
              */
             gunAnim.SetBool("isFiring", false);
         }
+    }
+    public void SendHealthData(int health)
+    {
+
+        if (OnUpdateHealth != null)
+        {
+            OnUpdateHealth(health);
+        }
+
     }
 }
