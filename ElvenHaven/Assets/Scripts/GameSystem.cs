@@ -9,7 +9,7 @@ public class GameSystem : MonoBehaviour
 	// Use this for initialization
 	public void StartGame ()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Zombie Shooter Level 1");
 	}
 	
 	// Update is called once per frame
