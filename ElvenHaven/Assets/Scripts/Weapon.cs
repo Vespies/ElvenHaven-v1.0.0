@@ -12,17 +12,17 @@ public class Weapon : MonoBehaviour
     private void Update()
     {
         
-        if (Input.GetMouseButton(0))
-        {
+        //if (Input.GetMouseButton(0))
+        //{
            
-            if (!isFiring)
-            {
-                Fire();
-            }
-        }
+        //    if (!isFiring)
+        //    {
+        //        Fire();
+        //    }
+        //}
     }
     
-    private void Fire()
+    public void Fire()
     {
         
         isFiring = true;
