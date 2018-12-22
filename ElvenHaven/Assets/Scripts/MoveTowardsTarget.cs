@@ -20,7 +20,12 @@ public class MoveTowardsTarget : MonoBehaviour
             }
             else
             {
-                transform.position = Vector3.MoveTowards(currentPosition, targetPosition, currentSpeed);
+                if (dist > 20)
+                {
+
+                }
+                else
+                    transform.position = Vector3.MoveTowards(currentPosition, targetPosition, currentSpeed);
             }
 
 
