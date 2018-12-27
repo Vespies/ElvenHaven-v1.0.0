@@ -34,8 +34,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4577640484420432}
-  - component: {fileID: 114250737235660976}
-  - component: {fileID: 114770114128171326}
+  - component: {fileID: 114165854783874484}
+  - component: {fileID: 114177183697401316}
   m_Layer: 12
   m_Name: Dual Hand Crossbows
   m_TagString: Untagged
@@ -99,7 +99,7 @@ Transform:
   m_Father: {fileID: 4577640484420432}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114250737235660976
+--- !u!114 &114165854783874484
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -107,15 +107,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1454558446566264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd9aa41e6af141f4684b52afa4d52767, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d6b43d61eba92c408a02a73f5b6ec6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1419935235377956, guid: a181e81e2d2a5ea40925eadcd5d2ed55,
     type: 2}
   bulletSpawn:
   - {fileID: 4349730918474488}
-  fireTime: 0.5
---- !u!114 &114770114128171326
+  fireTime: 0.25
+--- !u!114 &114177183697401316
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -123,11 +123,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1454558446566264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd9aa41e6af141f4684b52afa4d52767, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d6b43d61eba92c408a02a73f5b6ec6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1419935235377956, guid: a181e81e2d2a5ea40925eadcd5d2ed55,
     type: 2}
   bulletSpawn:
   - {fileID: 4639448614378350}
-  fireTime: 0.5
+  fireTime: 0.25

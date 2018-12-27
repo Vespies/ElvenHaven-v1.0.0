@@ -34,9 +34,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4094194271485708}
-  - component: {fileID: 114878039363518904}
-  - component: {fileID: 114825659326916852}
-  - component: {fileID: 114311516299801644}
+  - component: {fileID: 114764900283978830}
+  - component: {fileID: 95163148478008156}
   m_Layer: 0
   m_Name: Repeater Crossbow
   m_TagString: Untagged
@@ -129,7 +128,25 @@ Transform:
   m_Father: {fileID: 4094194271485708}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114311516299801644
+--- !u!95 &95163148478008156
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1401410523288582}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e1f07e9081b26c949ac81147b3d6d3fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114764900283978830
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -137,43 +154,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1401410523288582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd9aa41e6af141f4684b52afa4d52767, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1419935235377956, guid: a181e81e2d2a5ea40925eadcd5d2ed55,
-    type: 2}
-  bulletSpawn:
-  - {fileID: 4575306500343036}
-  fireTime: 0.3
---- !u!114 &114825659326916852
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1401410523288582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd9aa41e6af141f4684b52afa4d52767, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1419935235377956, guid: a181e81e2d2a5ea40925eadcd5d2ed55,
-    type: 2}
-  bulletSpawn:
-  - {fileID: 4853767885976764}
-  fireTime: 0.2
---- !u!114 &114878039363518904
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1401410523288582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd9aa41e6af141f4684b52afa4d52767, type: 3}
+  m_Script: {fileID: 11500000, guid: dff02db87c6158d48a48f5b26a1fb13f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1419935235377956, guid: a181e81e2d2a5ea40925eadcd5d2ed55,
     type: 2}
   bulletSpawn:
   - {fileID: 4333795557460952}
-  fireTime: 0.1
+  fireTime: 0.5

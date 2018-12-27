@@ -19,10 +19,14 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             gunAnim.SetBool("isFiring", true);
+            gunAnim.SetBool("isFiringHand", true);
+            gunAnim.SetBool("isFiringRepeater", true);
         }
         else 
         {
            gunAnim.SetBool("isFiring", false);
+           gunAnim.SetBool("isFiringHand", false);
+           gunAnim.SetBool("isFiringRepeater", false);
         }
     }
     public void SendHealthData(int health)
@@ -38,5 +42,7 @@ public class Player : MonoBehaviour
     public void Fire()
     {
         transform.GetComponentInChildren<Weapon>().Fire();
+        transform.GetComponentInChildren<WeaponRepeaterCrossbow>().Fire();
+        transform.GetComponentInChildren<WeaponHandCrossbows>().Fire();
     }
 }

@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class WeaponHandCrossbows : MonoBehaviour {
 
 
-public class Weapon : MonoBehaviour
-{
-    
     public GameObject bulletPrefab;
     public Transform[] bulletSpawn;
     public float fireTime = 0.5f;
@@ -13,21 +14,13 @@ public class Weapon : MonoBehaviour
 
     private void Update()
     {
-        
-        //if (Input.GetMouseButton(0))
-        //{
-           
-        //    if (!isFiring)
-        //    {
-        //        Fire();
-        //    }
-        //}
+
     }
-    
+
     public void Fire()
     {
-        
-        isFiring = true;
+
+        isFiringHand = true;
         for (int i = 0; i < bulletSpawn.Length; i++)
         {
             Instantiate(bulletPrefab, bulletSpawn[i].position, bulletSpawn[i].rotation);
@@ -39,7 +32,7 @@ public class Weapon : MonoBehaviour
         {
             GetComponent<AudioSource>().Play();
         }
-        
+
         Invoke("SetFiring", fireTime);
     }
 
@@ -49,4 +42,4 @@ public class Weapon : MonoBehaviour
         isFiringHand = false;
         isFiringRepeater = false;
     }
-} 
+}
