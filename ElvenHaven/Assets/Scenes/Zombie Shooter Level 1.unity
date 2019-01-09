@@ -122,11 +122,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4429069834689282, guid: d3a7f2107219547408de66409d21eba2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.25
+      value: 5.55
       objectReference: {fileID: 0}
     - target: {fileID: 4429069834689282, guid: d3a7f2107219547408de66409d21eba2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.05
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 4429069834689282, guid: d3a7f2107219547408de66409d21eba2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -152,12 +152,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114562394693945172, guid: d3a7f2107219547408de66409d21eba2,
+    - target: {fileID: 114955292909868796, guid: d3a7f2107219547408de66409d21eba2,
         type: 2}
       propertyPath: target
       value: 
       objectReference: {fileID: 802347451}
-    - target: {fileID: 114955292909868796, guid: d3a7f2107219547408de66409d21eba2,
+    - target: {fileID: 114562394693945172, guid: d3a7f2107219547408de66409d21eba2,
         type: 2}
       propertyPath: target
       value: 
@@ -380,6 +380,71 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1001 &484149278
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4771266634703970, guid: 688cb599f86a54b40aa34e9ac2d72ea4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771266634703970, guid: 688cb599f86a54b40aa34e9ac2d72ea4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771266634703970, guid: 688cb599f86a54b40aa34e9ac2d72ea4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771266634703970, guid: 688cb599f86a54b40aa34e9ac2d72ea4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771266634703970, guid: 688cb599f86a54b40aa34e9ac2d72ea4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771266634703970, guid: 688cb599f86a54b40aa34e9ac2d72ea4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771266634703970, guid: 688cb599f86a54b40aa34e9ac2d72ea4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771266634703970, guid: 688cb599f86a54b40aa34e9ac2d72ea4, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 688cb599f86a54b40aa34e9ac2d72ea4, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &487429199 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1061267547172000, guid: 688cb599f86a54b40aa34e9ac2d72ea4,
+    type: 2}
+  m_PrefabInternal: {fileID: 484149278}
+--- !u!95 &487429200
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 487429199}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 844bcf96681174046b605b763a4ec229, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,7 +1315,7 @@ GameObject:
   - component: {fileID: 1887574858}
   - component: {fileID: 1887574857}
   m_Layer: 0
-  m_Name: ZombieSpawner
+  m_Name: GoblinBurrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

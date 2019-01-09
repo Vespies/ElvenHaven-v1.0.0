@@ -12,9 +12,12 @@ public class WeaponHandCrossbows : MonoBehaviour {
     private bool isFiringHand = false;
     private bool isFiringRepeater = false;
 
-    private void Update()
-    {
+    private Animator playerstate;
 
+    private void Start()
+    {
+        playerstate = GetComponent<Animator>();
+        playerstate.SetBool("SwitchHandCrossbow", true);
     }
 
     public void Fire()
