@@ -16,8 +16,8 @@ public class WeaponHandCrossbows : MonoBehaviour {
 
     private void Start()
     {
-        playerstate = GetComponent<Animator>();
-        playerstate.SetBool("SwitchHandCrossbow", true);
+        //playerstate = GetComponent<Animator>();
+        //playerstate.SetBool("SwitchHandCrossbow", true);
     }
 
     public void Fire()

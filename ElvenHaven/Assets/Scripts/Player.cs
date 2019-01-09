@@ -41,8 +41,20 @@ public class Player : MonoBehaviour
 
     public void Fire()
     {
-        transform.GetComponentInChildren<Weapon>().Fire();
-        transform.GetComponentInChildren<WeaponRepeaterCrossbow>().Fire();
-        transform.GetComponentInChildren<WeaponHandCrossbows>().Fire();
+
+        if (transform.GetComponentInChildren<Weapon>() != null)
+        {
+            transform.GetComponentInChildren<Weapon>().Fire();
+        }
+
+        if (transform.GetComponentInChildren<WeaponRepeaterCrossbow>() != null)
+        {
+            transform.GetComponentInChildren<WeaponRepeaterCrossbow>().Fire();
+        }
+
+        if (transform.GetComponentInChildren<WeaponHandCrossbows>() != null)
+        {
+            transform.GetComponentInChildren<WeaponHandCrossbows>().Fire();
+        }
     }
 }

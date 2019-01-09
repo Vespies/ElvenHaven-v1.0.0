@@ -25,9 +25,18 @@ public class WeaponManager : MonoBehaviour
     }
     public void AddWeapon(GameObject prefab)
     {
-
         GameObject weapon = Instantiate(prefab, transform.position, transform.rotation, transform);
         ChangeWeapon(weapon.transform.GetSiblingIndex());
+
+        if (weapon.GetComponent<WeaponRepeaterCrossbow>() != null)
+        {
+            transform.parent.GetComponent<Animator>().SetTrigger("SwitchRepeater");
+        }
+
+        if (weapon.GetComponent<WeaponHandCrossbows>() != null)
+        {
+            transform.parent.GetComponent<Animator>().SetBool("SwitchHandCrossbow", true);
+        }
     }
     private void Update()
     {
