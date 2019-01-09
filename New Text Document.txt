@@ -1,0 +1,5 @@
+1. Shooting is game breaking
+2. Weapons animations don't change
+3. Weapons don't shoot
+4. Enemies can't shoot
+5. Enemies animations
