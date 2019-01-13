@@ -35,22 +35,15 @@ public class WeaponManager : MonoBehaviour
 
         if (weapon.GetComponent<WeaponHandCrossbows>() != null)
         {
-            transform.parent.GetComponent<Animator>().SetBool("SwitchHandCrossbow", true);
+            transform.parent.GetComponent<Animator>().SetTrigger("SwitchHandCrossbows");
+        }
+        if (weapon.GetComponent<Weapon>() != null)
+        {
+            transform.parent.GetComponent<Animator>().SetTrigger("SwitchLongbow");
         }
     }
     private void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Alpha1)) 
-        //{
-        //    ChangeWeapon(0); 
-        //}
-        //if (Input.GetKeyDown(KeyCode.Alpha2)) 
-        //{
-        //    ChangeWeapon(1); 
-        //}
-        //if (Input.GetKeyDown(KeyCode.Alpha3)) 
-        //{
-        //    ChangeWeapon(2); 
-        //}
+
     }
 }

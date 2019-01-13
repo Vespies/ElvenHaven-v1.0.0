@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50718782519221564}
   - component: {fileID: 114599179840241788}
   m_Layer: 8
-  m_Name: bolt
+  m_Name: boltRepeater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1500
-  damage: 25
+  damage: 50
 --- !u!212 &212838909634799564
 SpriteRenderer:
   m_ObjectHideFlags: 1

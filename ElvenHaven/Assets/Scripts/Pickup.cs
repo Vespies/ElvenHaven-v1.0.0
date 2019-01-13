@@ -32,11 +32,6 @@ public class Pickup : MonoBehaviour
                 break;
 
             
-            case PickupType.AttackSpeed:
-                other.gameObject.AddComponent<AttackSpeed>();
-                break;
-
-            
             case PickupType.MoveSpeed:
                 other.gameObject.AddComponent<SpeedBooster>();
                 break;

@@ -21,16 +21,18 @@ AnimationClip:
     - time: 0
       value: {fileID: 21300000, guid: 6667919216f68604eb51deb797f41712, type: 3}
     - time: 0.083333336
-      value: {fileID: 21300000, guid: 6667919216f68604eb51deb797f41712, type: 3}
+      value: {fileID: 21300000, guid: f72df18699375ba46b5d860b2c883440, type: 3}
     - time: 0.16666667
       value: {fileID: 21300000, guid: ca213b65fcf96ca4aa44f2d22566a73f, type: 3}
+    - time: 0.20833333
+      value: {fileID: 21300000, guid: 7b5e3ddc3cb728948b04371a449a67dd, type: 3}
     - time: 0.25
-      value: {fileID: 21300000, guid: ca213b65fcf96ca4aa44f2d22566a73f, type: 3}
+      value: {fileID: 21300000, guid: 6667919216f68604eb51deb797f41712, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 12
+  m_SampleRate: 24
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -46,15 +48,16 @@ AnimationClip:
       isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 21300000, guid: 6667919216f68604eb51deb797f41712, type: 3}
+    - {fileID: 21300000, guid: f72df18699375ba46b5d860b2c883440, type: 3}
+    - {fileID: 21300000, guid: ca213b65fcf96ca4aa44f2d22566a73f, type: 3}
+    - {fileID: 21300000, guid: 7b5e3ddc3cb728948b04371a449a67dd, type: 3}
     - {fileID: 21300000, guid: 6667919216f68604eb51deb797f41712, type: 3}
-    - {fileID: 21300000, guid: ca213b65fcf96ca4aa44f2d22566a73f, type: 3}
-    - {fileID: 21300000, guid: ca213b65fcf96ca4aa44f2d22566a73f, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.33333334
+    m_StopTime: 0.29166666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -75,8 +78,15 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events:
-  - time: 0
-    functionName: Fire
+  - time: 0.083333336
+    functionName: FireHandCrossbow1
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.16666667
+    functionName: FireHandCrossbow2
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

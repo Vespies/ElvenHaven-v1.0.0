@@ -20,7 +20,7 @@ public class MoveTowardsTarget : MonoBehaviour
             }
             else
             {
-                if (dist > 20)
+                if (dist > 15)
                 {
 
                 }

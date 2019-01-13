@@ -9,9 +9,13 @@ public class EnemyArcher : MonoBehaviour
     public Transform shootPoint;
     public GameObject bulletPrefab;
     public float firetime = 5.0f;
+    public float nextfire;
+    public bool spottingenemy = false;
 
     private void Start()
     {
+        print("hey");
+        nextfire = Time.time;
         if (target != null)
         {
             Vector3 currentPosition = transform.position;
@@ -19,34 +23,41 @@ public class EnemyArcher : MonoBehaviour
 
             float dist = Vector3.Distance(transform.position, target.position);
 
-            if (dist < 1)
+            if (dist < 15)
             {
-
+                
+                spottingenemy = true;
             }
             else
             {
-                if (dist > 20)
-                {
 
-
-                }
-                else
-                    while (true)
-                    {
-                        Invoke("Shoot", firetime);
-                    }    
             }
+
         }
     }
     public void SetTarget(Transform newTarget)
     {
         target = newTarget;
     }
+    public void Update()
+    {
+            Timetofire();
+    }
 
     private void Shoot()
     {
-        Vector3 bulletPosition = shootPoint.position;
-        Quaternion bulletRotation = shootPoint.rotation;
-        Instantiate(bulletPrefab, bulletPosition, bulletRotation);
+
+    }
+    public void Timetofire()
+    {
+        if (Time.time > nextfire)
+        {
+            //transform.parent.GetComponent<Animator>().SetBool("Crossbow shoot",true);
+            Vector3 bulletPosition = shootPoint.position;
+            Quaternion bulletRotation = shootPoint.rotation;
+            Instantiate(bulletPrefab, bulletPosition, bulletRotation);
+            nextfire = Time.time + firetime;
+            //transform.parent.GetComponent<Animator>().SetBool("Crossbow shoot",false);
+        }
     }
 }

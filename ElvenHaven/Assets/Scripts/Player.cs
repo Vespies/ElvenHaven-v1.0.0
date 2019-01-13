@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-      
+
         gunAnim = GetComponent<Animator>();
     }
 
@@ -22,11 +22,11 @@ public class Player : MonoBehaviour
             gunAnim.SetBool("isFiringHand", true);
             gunAnim.SetBool("isFiringRepeater", true);
         }
-        else 
+        else
         {
-           gunAnim.SetBool("isFiring", false);
-           gunAnim.SetBool("isFiringHand", false);
-           gunAnim.SetBool("isFiringRepeater", false);
+            gunAnim.SetBool("isFiring", false);
+            gunAnim.SetBool("isFiringHand", false);
+            gunAnim.SetBool("isFiringRepeater", false);
         }
     }
     public void SendHealthData(int health)
@@ -39,22 +39,46 @@ public class Player : MonoBehaviour
 
     }
 
-    public void Fire()
+    public void FireRepeaterCrossbow1()
     {
-
+        if (transform.GetComponentInChildren<WeaponRepeaterCrossbow>() != null)
+        {
+            transform.GetComponentInChildren<WeaponRepeaterCrossbow>().Fire1();
+        }
+    }
+    public void FireRepeaterCrossbow2()
+    {
+        if (transform.GetComponentInChildren<WeaponRepeaterCrossbow>() != null)
+        {
+            transform.GetComponentInChildren<WeaponRepeaterCrossbow>().Fire2();
+        }
+    }
+    public void FireRepeaterCrossbow3()
+    {
+        if (transform.GetComponentInChildren<WeaponRepeaterCrossbow>() != null)
+        {
+            transform.GetComponentInChildren<WeaponRepeaterCrossbow>().Fire3();
+        }
+    }
+    public void FireLongbow()
+    {
         if (transform.GetComponentInChildren<Weapon>() != null)
         {
             transform.GetComponentInChildren<Weapon>().Fire();
         }
-
-        if (transform.GetComponentInChildren<WeaponRepeaterCrossbow>() != null)
-        {
-            transform.GetComponentInChildren<WeaponRepeaterCrossbow>().Fire();
-        }
-
+    }
+    public void FireHandCrossbow1()
+    {
         if (transform.GetComponentInChildren<WeaponHandCrossbows>() != null)
         {
-            transform.GetComponentInChildren<WeaponHandCrossbows>().Fire();
+            transform.GetComponentInChildren<WeaponHandCrossbows>().Fire1();
+        }
+    }
+    public void FireHandCrossbow2()
+    {
+        if (transform.GetComponentInChildren<WeaponHandCrossbows>() != null)
+        {
+            transform.GetComponentInChildren<WeaponHandCrossbows>().Fire2();
         }
     }
 }

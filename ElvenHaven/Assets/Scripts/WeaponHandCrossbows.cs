@@ -6,43 +6,26 @@ public class WeaponHandCrossbows : MonoBehaviour {
 
 
     public GameObject bulletPrefab;
-    public Transform[] bulletSpawn;
-    public float fireTime = 0.5f;
-    private bool isFiring = false;
-    private bool isFiringHand = false;
-    private bool isFiringRepeater = false;
+    public Transform[] bulletSpawn1;
+    public Transform[] bulletSpawn2;
 
-    private Animator playerstate;
-
-    private void Start()
+    public void Fire1()
     {
-        //playerstate = GetComponent<Animator>();
-        //playerstate.SetBool("SwitchHandCrossbow", true);
-    }
-
-    public void Fire()
-    {
-
-        isFiringHand = true;
-        for (int i = 0; i < bulletSpawn.Length; i++)
+        for (int i = 0; i < bulletSpawn1.Length; i++)
         {
-            Instantiate(bulletPrefab, bulletSpawn[i].position, bulletSpawn[i].rotation);
+            Instantiate(bulletPrefab, bulletSpawn1[i].position, bulletSpawn1[i].rotation);
         }
-        //Vector3 bulletPosition = bulletSpawn.position;
-        //Quaternion bulletRotation = bulletSpawn.rotation;
 
         if (GetComponent<AudioSource>() != null)
         {
             GetComponent<AudioSource>().Play();
         }
-
-        Invoke("SetFiring", fireTime);
     }
-
-    private void SetFiring()
+    public void Fire2()
     {
-        isFiring = false;
-        isFiringHand = false;
-        isFiringRepeater = false;
+        for (int i = 0; i < bulletSpawn2.Length; i++)
+        {
+            Instantiate(bulletPrefab, bulletSpawn2[i].position, bulletSpawn2[i].rotation);
+        }
     }
 }
