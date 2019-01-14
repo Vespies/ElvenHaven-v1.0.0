@@ -6,30 +6,34 @@ public class MoveTowardsTarget : MonoBehaviour
     public float speed = 5.0f;
     private void Update()
     {
-        if (target != null)
-        {
-            Vector3 currentPosition = transform.position;
-            Vector3 targetPosition = target.position;
-            float currentSpeed = speed * 0.01f;
-
-            float dist = Vector3.Distance(transform.position, target.position);
-
-            if (dist < 1)
+        if (Time.timeScale ==1)
+            if (target != null)
             {
+                Vector3 currentPosition = transform.position;
+                Vector3 targetPosition = target.position;
+                float currentSpeed = speed * 0.01f;
 
-            }
-            else
-            {
-                if (dist > 16)
+                float dist = Vector3.Distance(transform.position, target.position);
+
+                if (dist < 1)
                 {
 
                 }
                 else
-                    transform.position = Vector3.MoveTowards(currentPosition, targetPosition, currentSpeed);
+                {
+                    if (dist > 16)
+                    {
+
+                    }
+                    else
+                    {
+                        transform.position = Vector3.MoveTowards(currentPosition, targetPosition, currentSpeed);
+                        GetComponent<AudioSource>().enabled = true;
+                    }
+                }
+
+
             }
-
-
-        }
 
     }
     public void SetTarget(Transform newTarget)

@@ -10,7 +10,6 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-
         gunAnim = GetComponent<Animator>();
         Time.timeScale = 1;
     }
@@ -46,6 +45,10 @@ public class Player : MonoBehaviour
         if (transform.GetComponentInChildren<WeaponRepeaterCrossbow>() != null)
         {
             transform.GetComponentInChildren<WeaponRepeaterCrossbow>().Fire1();
+            if (GetComponent<AudioSource>() != null)
+            {
+                GetComponent<AudioSource>().Play();
+            }
         }
     }
     public void FireRepeaterCrossbow2()
@@ -53,6 +56,10 @@ public class Player : MonoBehaviour
         if (transform.GetComponentInChildren<WeaponRepeaterCrossbow>() != null)
         {
             transform.GetComponentInChildren<WeaponRepeaterCrossbow>().Fire2();
+            if (GetComponent<AudioSource>() != null)
+            {
+                GetComponent<AudioSource>().Play();
+            }
         }
     }
     public void FireRepeaterCrossbow3()
@@ -60,6 +67,10 @@ public class Player : MonoBehaviour
         if (transform.GetComponentInChildren<WeaponRepeaterCrossbow>() != null)
         {
             transform.GetComponentInChildren<WeaponRepeaterCrossbow>().Fire3();
+            if (GetComponent<AudioSource>() != null)
+            {
+                GetComponent<AudioSource>().Play();
+            }
         }
     }
     public void FireLongbow()
@@ -67,6 +78,10 @@ public class Player : MonoBehaviour
         if (transform.GetComponentInChildren<Weapon>() != null)
         {
             transform.GetComponentInChildren<Weapon>().Fire();
+            if (GetComponent<AudioSource>() != null)
+            {
+                GetComponent<AudioSource>().Play();
+            }
         }
     }
     public void FireHandCrossbow1()
@@ -74,6 +89,10 @@ public class Player : MonoBehaviour
         if (transform.GetComponentInChildren<WeaponHandCrossbows>() != null)
         {
             transform.GetComponentInChildren<WeaponHandCrossbows>().Fire1();
+            if (GetComponent<AudioSource>() != null)
+            {
+                GetComponent<AudioSource>().Play();
+            }
         }
     }
     public void FireHandCrossbow2()
@@ -81,6 +100,10 @@ public class Player : MonoBehaviour
         if (transform.GetComponentInChildren<WeaponHandCrossbows>() != null)
         {
             transform.GetComponentInChildren<WeaponHandCrossbows>().Fire2();
+            if (GetComponent<AudioSource>() != null)
+            {
+                GetComponent<AudioSource>().Play();
+            }
         }
     }
 }

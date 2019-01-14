@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Pause : MonoBehaviour {
 
@@ -18,6 +19,7 @@ public class Pause : MonoBehaviour {
             else
             {
                 Pausing();
+                transform.GetComponentInParent<AudioSource>().Pause();
             }
 
         }
@@ -41,6 +43,7 @@ public class Pause : MonoBehaviour {
         {
             GetComponent<AudioSource>().Stop();
         }
+        transform.GetComponentInParent<AudioSource>().Play();
     }
     public void Quit()
     {

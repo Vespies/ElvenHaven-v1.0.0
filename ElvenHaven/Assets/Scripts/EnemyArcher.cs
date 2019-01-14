@@ -10,7 +10,6 @@ public class EnemyArcher : MonoBehaviour
     public GameObject bulletPrefab;
     public float firetime = 5.0f;
     public float nextfire;
-    public bool spottingenemy = false;
 
     private void Start()
     {
@@ -26,7 +25,6 @@ public class EnemyArcher : MonoBehaviour
             if (dist < 15)
             {
                 
-                spottingenemy = true;
             }
             else
             {
