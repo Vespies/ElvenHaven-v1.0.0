@@ -14,7 +14,7 @@ public class EnemyArcher : MonoBehaviour
 
     private void Start()
     {
-        print("hey");
+
         nextfire = Time.time;
         if (target != null)
         {

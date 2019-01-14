@@ -1,18 +1,19 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
     public delegate void UpdateHealth(int newHealth);
     public static event UpdateHealth OnUpdateHealth;
-
+    public UnityEvent OnPause;
     private Animator gunAnim;
 
     private void Start()
     {
 
         gunAnim = GetComponent<Animator>();
+        Time.timeScale = 1;
     }
-
 
     private void Update()
     {
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour
             gunAnim.SetBool("isFiringHand", false);
             gunAnim.SetBool("isFiringRepeater", false);
         }
+
     }
     public void SendHealthData(int health)
     {

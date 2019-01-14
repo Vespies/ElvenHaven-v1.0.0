@@ -18,7 +18,7 @@ TagManager:
   - Player Health
   - Enemy Damage
   - Pickup
-  - 
+  - Wall
   - 
   - 
   - 
@@ -58,4 +58,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 160312679
+    locked: 0
+  - name: Forest
+    uniqueID: 1126585467
     locked: 0

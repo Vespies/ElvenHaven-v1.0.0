@@ -5,20 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class GameSystem : MonoBehaviour
 {
-
-	// Use this for initialization
 	public void StartGame ()
     {
         SceneManager.LoadScene("Zombie Shooter Level 1");
 	}
 	
-	// Update is called once per frame
 	public void EndGame ()
     {
         SceneManager.LoadScene("Game Over");
+        if (GetComponent<AudioSource>() != null)
+        {
+            GetComponent<AudioSource>().Play();
+        }
     }
     public void BackToMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
+        if (GetComponent<AudioSource>() != null)
+        {
+            GetComponent<AudioSource>().Play();
+        }
     }
 }
