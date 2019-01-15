@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 2a5a5db84eb573a49b4e7a89b109df6b
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: First Order Condensed
+  fontNames:
+  - First Order Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ab2214190b3db6a4d8e3d7629feb0d0a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

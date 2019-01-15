@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 3a8eb67253a4ba048bad4ca0a9c6b8ea
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: First Order Condensed Italic
+  fontNames:
+  - First Order Condensed Italic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e70bd37684500e941bcf0aa2618cf10f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

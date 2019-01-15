@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: a6a28defe93e2d44d8a35e8ef2a6d85c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: First Order Italic
+  fontNames:
+  - First Order Italic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 567f2b29a1458a5409907bfb91f76248, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

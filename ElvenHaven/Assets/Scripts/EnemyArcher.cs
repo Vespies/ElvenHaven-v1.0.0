@@ -8,40 +8,19 @@ public class EnemyArcher : MonoBehaviour
     public Transform target;
     public Transform shootPoint;
     public GameObject bulletPrefab;
-    public float firetime = 5.0f;
-    public float nextfire;
+    private float firetime = 2.0f;
+    private float nextfire;
 
     private void Start()
     {
-
+        //nextfire = time in seconds since the beginning of the game
         nextfire = Time.time;
-        if (target != null)
-        {
-            Vector3 currentPosition = transform.position;
-            Vector3 targetPosition = target.position;
-
-            float dist = Vector3.Distance(transform.position, target.position);
-
-            if (dist < 15)
-            {
-                
-            }
-            else
-            {
-
-            }
-
-        }
-    }
-    public void SetTarget(Transform newTarget)
-    {
-        target = newTarget;
     }
     public void Update()
     {
-            Timetofire();
+        //runs this every frame
+        Timetofire();
     }
-
     private void Shoot()
     {
 
@@ -50,12 +29,12 @@ public class EnemyArcher : MonoBehaviour
     {
         if (Time.time > nextfire)
         {
-            //transform.parent.GetComponent<Animator>().SetBool("Crossbow shoot",true);
+            //standard shooting code, making sure the enemy knows where to look and what to shoot
             Vector3 bulletPosition = shootPoint.position;
             Quaternion bulletRotation = shootPoint.rotation;
             Instantiate(bulletPrefab, bulletPosition, bulletRotation);
+            //nextfire becomes greater than time therefore its gonna take some frames until the enemy shoots again
             nextfire = Time.time + firetime;
-            //transform.parent.GetComponent<Animator>().SetBool("Crossbow shoot",false);
         }
     }
 }

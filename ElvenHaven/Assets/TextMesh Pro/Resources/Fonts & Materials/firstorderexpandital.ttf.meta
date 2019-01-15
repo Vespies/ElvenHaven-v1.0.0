@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: a61793f965089b949a76095e8256f3ea
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: First Order Expanded Italic
+  fontNames:
+  - First Order Expanded Italic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a7dc8ef35b967e44285681c58201b6a3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

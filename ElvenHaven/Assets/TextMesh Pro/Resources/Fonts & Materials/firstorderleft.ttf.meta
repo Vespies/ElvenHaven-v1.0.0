@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ee2d7a683040f9a45aaa297250d7e3c1
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: First Order Leftalic
+  fontNames:
+  - First Order Leftalic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7d5c2e1c4a4f2ad4dbb0be048bddcad0, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

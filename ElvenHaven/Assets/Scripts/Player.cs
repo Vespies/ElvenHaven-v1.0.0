@@ -10,12 +10,15 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        //gets the animation
         gunAnim = GetComponent<Animator>();
+        //makes sure game is not paused
         Time.timeScale = 1;
     }
 
     private void Update()
     {
+        //everytime left mouse button is paused, enables animation for 3 firing modes
         if (Input.GetMouseButton(0))
         {
             gunAnim.SetBool("isFiring", true);
@@ -24,6 +27,7 @@ public class Player : MonoBehaviour
         }
         else
         {
+            //disables the firing modes if nothing is pressed
             gunAnim.SetBool("isFiring", false);
             gunAnim.SetBool("isFiringHand", false);
             gunAnim.SetBool("isFiringRepeater", false);
@@ -42,6 +46,7 @@ public class Player : MonoBehaviour
 
     public void FireRepeaterCrossbow1()
     {
+        //if this component is currently active make the script in a child shoot, also play a sound
         if (transform.GetComponentInChildren<WeaponRepeaterCrossbow>() != null)
         {
             transform.GetComponentInChildren<WeaponRepeaterCrossbow>().Fire1();
@@ -53,6 +58,7 @@ public class Player : MonoBehaviour
     }
     public void FireRepeaterCrossbow2()
     {
+        //if this component is currently active make the script in a child shoot, also play a sound
         if (transform.GetComponentInChildren<WeaponRepeaterCrossbow>() != null)
         {
             transform.GetComponentInChildren<WeaponRepeaterCrossbow>().Fire2();
@@ -64,6 +70,7 @@ public class Player : MonoBehaviour
     }
     public void FireRepeaterCrossbow3()
     {
+        //if this component is currently active make the script in a child shoot, also play a sound
         if (transform.GetComponentInChildren<WeaponRepeaterCrossbow>() != null)
         {
             transform.GetComponentInChildren<WeaponRepeaterCrossbow>().Fire3();
@@ -75,6 +82,7 @@ public class Player : MonoBehaviour
     }
     public void FireLongbow()
     {
+        //if this component is currently active make the script in a child shoot, also play a sound
         if (transform.GetComponentInChildren<Weapon>() != null)
         {
             transform.GetComponentInChildren<Weapon>().Fire();
@@ -86,6 +94,7 @@ public class Player : MonoBehaviour
     }
     public void FireHandCrossbow1()
     {
+        //if this component is currently active make the script in a child shoot, also play a sound
         if (transform.GetComponentInChildren<WeaponHandCrossbows>() != null)
         {
             transform.GetComponentInChildren<WeaponHandCrossbows>().Fire1();
@@ -97,6 +106,7 @@ public class Player : MonoBehaviour
     }
     public void FireHandCrossbow2()
     {
+        //if this component is currently active make the script in a child shoot, also play a sound
         if (transform.GetComponentInChildren<WeaponHandCrossbows>() != null)
         {
             transform.GetComponentInChildren<WeaponHandCrossbows>().Fire2();

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 12f99b0d3bc1a8445b9057fdcb164a6a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: First Order Rotalic
+  fontNames:
+  - First Order Rotalic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1e9d88b89dcacc24695c4b1d57c950da, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
