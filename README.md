@@ -21,3 +21,6 @@ Music==>
 https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400014&Search=Search
 https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1300024&Search=Search
 https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100888&Search=Search
+https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100875&Search=Search
+https://www.soundsnap.com/tags/goblin
+https://www.soundsnap.com/search/audio/bow+and+arrow/score
