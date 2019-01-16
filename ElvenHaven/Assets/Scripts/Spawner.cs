@@ -20,7 +20,7 @@ public class Spawner : MonoBehaviour
                 float dist = Vector3.Distance(transform.position, target.position);
 
                 //if player is close enough, spawns the given prefab
-                if (dist < 15)
+                if (dist < 14)
                 {
                     Vector3 rotationInDegrees = transform.eulerAngles;
                     rotationInDegrees.z += adjustmentAngle;

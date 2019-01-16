@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SmoothFollow2D : MonoBehaviour {
     public Transform target;
-    public float smoothing = 5.0f;
+    public float smoothing = 2.0f;
 	void Start () {
 		
 	}

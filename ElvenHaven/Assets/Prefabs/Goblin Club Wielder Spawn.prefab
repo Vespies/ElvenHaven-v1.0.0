@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 940f953efb9c5e8458ee4b683ce6c5bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 5
   resetTime: 0.25
 --- !u!114 &114676076774935870
 MonoBehaviour:
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb6ac7614481dc6498a7c99ae2a2b112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 75
   onDie:
     m_PersistentCalls:
       m_Calls:
